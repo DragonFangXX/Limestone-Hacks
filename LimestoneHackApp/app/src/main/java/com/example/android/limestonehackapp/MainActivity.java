@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openRecursion(View view){
-        Intent intent = new Intent(this, HanoiActivity.class);
+        Intent intent = new Intent(this, HanoiActivityReformatted.class);
         startActivity(intent);
     }
 

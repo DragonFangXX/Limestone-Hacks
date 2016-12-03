@@ -48,4 +48,9 @@ public class BinarySearchActivity extends AppCompatActivity {
         numGuesses.setText(getString(R.string.number_of_guesses, Integer.toString(num_guesses)));
         num_user_input.setText("");
     }
+
+    public void restart(View view){
+        finish();
+        startActivity(getIntent());
+    }
 }

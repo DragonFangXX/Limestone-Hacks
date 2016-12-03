@@ -22,7 +22,10 @@
         <activity
             android:name=".HanoiActivity"
             android:label="HAAAANNNOOOOI" />
-        <activity android:name=".ExtraHelpActivity"></activity>
+        <activity android:name=".ExtraHelpActivity"
+            android:label="Additional Resources"/>
+        <activity android:name=".HanoiActivityReformatted">
+        </activity>
     </application>
 
 </manifest>
