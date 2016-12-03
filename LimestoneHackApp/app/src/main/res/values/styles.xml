@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BinaryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#ff9800</item>
+        <item name="colorPrimaryDark">#ef6c00</item>
+        <item name="colorAccent">#ffb74d</item>
+    </style>
     <style name="main_header">
         <item name="android:paddingTop">32dp</item>
         <item name="android:paddingLeft">16dp</item>
