@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.limestonehackapp.MainActivity">
+    tools:context="com.example.android.limestonehackapp.MainActivity"
+    android:weightSum="1">
 
     <TextView
         style="@style/main_header"
@@ -14,5 +15,7 @@
 
     <TextView
         style="@style/main_header"
-        android:text="Recursion" />
+        android:text="Recursion"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03" />
 </LinearLayout>
