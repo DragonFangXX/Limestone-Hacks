@@ -21,7 +21,8 @@
             android:theme="@style/BinaryTheme"/>
         <activity
             android:name=".HanoiActivity"
-            android:label="HAAAANNNOOOOI" />
+            android:label="HAAAANNNOOOOI"
+            android:theme="@style/RecursionTheme"/>
         <activity android:name=".ExtraHelpActivity"
             android:label="Additional Resources"
             android:theme="@style/RecursionTheme"/>

@@ -19,6 +19,7 @@
         <item name="colorPrimaryDark">#d84315</item>
         <item name="colorAccent">#ff8a65</item>
     </style>
+
     <style name="main_header">
         <item name="android:paddingTop">32dp</item>
         <item name="android:paddingLeft">16dp</item>
@@ -27,6 +28,7 @@
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">italic</item>
     </style>
 
     <style name="binary_labels">

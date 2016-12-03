@@ -40,14 +40,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showExtraHelpDrop(View view){
+        ImageView foxImg = (ImageView)findViewById(R.id.foxImg);
         TextView extraInstruction = (TextView) findViewById(R.id.extra_help_instruction);
         Button extraBtn = (Button)findViewById(R.id.extra_help_button);
 
         if (extraInstruction.getVisibility() == View.VISIBLE){
             extraInstruction.setVisibility(View.GONE);
             extraBtn.setVisibility(View.GONE);
+            foxImg.setVisibility(View.GONE);
         }
         else {
+            foxImg.setVisibility(View.VISIBLE);
             extraInstruction.setVisibility(View.VISIBLE);
             extraBtn.setVisibility(View.VISIBLE);
         }
