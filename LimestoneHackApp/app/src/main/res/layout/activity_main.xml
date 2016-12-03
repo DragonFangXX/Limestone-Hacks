@@ -17,5 +17,5 @@
         style="@style/main_header"
         android:text="Recursion"
         android:layout_height="wrap_content"
-        android:layout_weight="0.03" />
+         />
 </LinearLayout>
