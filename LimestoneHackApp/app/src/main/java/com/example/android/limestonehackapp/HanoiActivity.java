@@ -12,7 +12,7 @@ public class HanoiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recursion);
-        new Hanoi(4);
+        new Hanoi();
     }
 
 /**************************************************************************************************/
@@ -21,8 +21,9 @@ public class HanoiActivity extends AppCompatActivity {
         private boolean selecting_src = true;
         private int sel_src, sel_tgt, sel_aux;
         private String win_string;
+        private int discs = 4;
 
-        public Hanoi(int discs) {
+        public Hanoi() {
             HanoiBlock[] blocks = new HanoiBlock[discs];
             for(int i = 0; i<discs; i++)
                 blocks[i] = new HanoiBlock(i+1);
@@ -70,13 +71,13 @@ public class HanoiActivity extends AppCompatActivity {
 
 /**************************************************************************************************/
         protected class HanoiBlock {
-
+            int[] hbid = {R.id.hb_1, R.id.hb_2, R.id.hb_3, R.id.hb_4};
             private int size = 0;
             private ImageView image;
 
             public HanoiBlock(int size) {
                 this.size = size;
-
+                this.image = (ImageView) findViewById(hbid[size]);
             }
 
             public int getSize() {
