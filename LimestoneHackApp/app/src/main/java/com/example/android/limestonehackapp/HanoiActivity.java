@@ -12,6 +12,7 @@ public class HanoiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hanoi);
+        new Hanoi();
     }
 
 /**************************************************************************************************/
@@ -121,10 +122,12 @@ public class HanoiActivity extends AppCompatActivity {
                 t.addToTop(blocks[top]);
                 blocks[top] = null;
                 if(-1 < top) top--;
+                refresh();
             }
 
             protected void addToTop(HanoiBlock b) {
                 blocks[++top] = b;
+                refresh();
             }
 
             private void refresh() {
