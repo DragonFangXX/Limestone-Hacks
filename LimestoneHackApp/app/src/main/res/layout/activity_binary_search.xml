@@ -23,17 +23,19 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/num_user_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="New Guess"
-            android:inputType="number"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:textSize="24dp" />
+            android:textSize="24sp"
+            android:inputType="number" />
+
 
         <ImageView
             android:src="@drawable/arrow"
@@ -42,6 +44,7 @@
             android:layout_width="42dp"
             android:layout_height="42dp"
             android:onClick="compare_loop"/>
+
     </LinearLayout>
 
 </LinearLayout>
