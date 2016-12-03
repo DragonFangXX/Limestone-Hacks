@@ -12,7 +12,7 @@
         style="@style/main_header"
         android:background="#fb8c00"
         android:text="@string/binary_search_game"
-        android:onClick="showBinaryDrop"/>
+        android:onClick="openBinarySearch"/>
 
     <ImageView
         android:src="@drawable/binary_search"

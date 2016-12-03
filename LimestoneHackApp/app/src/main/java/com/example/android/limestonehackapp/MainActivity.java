@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void showBinaryDrop(View view){
         ImageView binaryImg = (ImageView)findViewById(R.id.binaryImg);
-        
+
     }
 
     public void openBinarySearch(View view){
