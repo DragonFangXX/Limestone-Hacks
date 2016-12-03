@@ -8,7 +8,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:id="@+id/h_frame"
-        android:layout_height="210dp">
+        android:layout_height="925px">
 
     </FrameLayout>
 
@@ -22,11 +22,11 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="128dp"
                 android:id="@+id/ht_src"
                 android:layout_alignParentBottom="true"
                 android:onClick="onclick"
-                android:layout_height="360px">
+                android:layout_height="360px"
+                android:layout_width="115dp">
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -68,10 +68,10 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="128dp"
                 android:id="@+id/ht_aux"
                 android:layout_alignParentBottom="true"
-                android:layout_height="360px">
+                android:layout_height="360px"
+                android:layout_width="106dp">
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -88,10 +88,10 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="128dp"
                 android:id="@+id/ht_tgt"
                 android:layout_alignParentBottom="true"
-                android:layout_height="360px">
+                android:layout_height="360px"
+                android:layout_width="102dp">
 
                 <LinearLayout
                     android:orientation="horizontal"

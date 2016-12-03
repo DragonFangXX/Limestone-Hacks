@@ -154,7 +154,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
                     layout.addView(blocks[i].getView());
                 }
                 else {
-                    params.height += 20 + 10*(blocks.length-i);
+                    params.height += 25 + 25*(blocks.length-i);
                 }
             }
 
