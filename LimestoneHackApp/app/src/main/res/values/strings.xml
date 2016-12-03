@@ -1,12 +1,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Comp Sci 20XX</string>
+
     <string name="binary_search_game">Binary Search Game</string>
     <string name="recursion">Recursion</string>
     <string name="extra_help">Extra Help</string>
+
     <string name="number_of_guesses">Number of Guesses: <xliff:g example="0" id="number_of_guess">%s</xliff:g></string>
     <string name="last_guess">Last Guess: <xliff:g example="0" id="last_guess">%s</xliff:g></string>
     <string name="too_high">Too High!</string>
     <string name="too_low">Too Low!</string>
     <string name="success">Success!</string>
     <string name="invalid">Invalid Input!</string>
+
+
 </resources>
