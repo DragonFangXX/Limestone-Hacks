@@ -22,8 +22,12 @@
         android:id="@+id/imageView" />
 
     <TextView
+        android:id="@+id/textView"
         style="@style/main_header"
         android:text="@string/recursion"
-        android:onClick="openRecursion"
-        android:id="@+id/textView" />
+        android:onClick="openRecursion" />
+
+    <TextView
+        style="@style/main_header"
+        android:text="@string/extra_help"/>
 </LinearLayout>

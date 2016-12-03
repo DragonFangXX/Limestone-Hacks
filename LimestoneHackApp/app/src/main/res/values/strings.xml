@@ -2,6 +2,7 @@
     <string name="app_name">Comp Sci 20XX</string>
     <string name="binary_search_game">Binary Search Game</string>
     <string name="recursion">Recursion</string>
+    <string name="extra_help">Extra Help</string>
     <string name="number_of_guesses">Number of Guesses: <xliff:g id="number_of_guess" example ="0">%s</xliff:g></string>
     <string name="last_guess">Last Guess: <xliff:g id="last_guess" example = "0">%s</xliff:g></string>
 </resources>
