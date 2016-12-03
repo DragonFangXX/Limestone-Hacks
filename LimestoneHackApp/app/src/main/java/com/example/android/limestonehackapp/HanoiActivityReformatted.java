@@ -107,6 +107,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
             this.id = id;
             this.layout = lt;
             this.layout.setOnClickListener(onclick);
+            this.padding = lp;
         }
 
         public HanoiTower(HanoiBlock[] blocks, int id, LinearLayout lt, LinearLayout lp) {
@@ -133,7 +134,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         }
 
         protected boolean addToTop(HanoiBlock b) {
-            if(blocks[top].getSize() > b.getSize()){
+            if(top == -1 || blocks[top].getSize() > b.getSize()){
                 blocks[++top] = b;
                 refresh(true);
                 return true;
