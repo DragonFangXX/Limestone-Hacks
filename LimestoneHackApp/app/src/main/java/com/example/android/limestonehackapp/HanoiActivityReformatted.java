@@ -72,6 +72,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
     }
 
     public void win() {
+        Log.d("Hanoi", "WINNNNNNNNERRRRRRRRR!");
         System.exit(0);
     }
 
@@ -104,6 +105,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         private HanoiTower(int id, LinearLayout lt) {
             this.id = id;
             this.layout = lt;
+            this.layout.setOnClickListener(onclick);
         }
 
         public HanoiTower(HanoiBlock[] blocks, int id, LinearLayout lt) {
@@ -120,22 +122,24 @@ public class HanoiActivityReformatted extends AppCompatActivity {
 
         public void moveTopTo(HanoiTower t) {
             if(0<=top) {
+                layout.removeAllViews();
                 t.addToTop(blocks[top]);
                 blocks[top] = null;
                 if(-1 < top) top--;
-                refresh();
+                refresh(false);
             }
         }
 
         protected void addToTop(HanoiBlock b) {
             blocks[++top] = b;
-            refresh();
+            refresh(true);
         }
 
-        private void refresh() {
-            layout.removeAllViews();
+        private void refresh(boolean clear) {
+            if(clear) layout.removeAllViews();
             for(HanoiBlock b : blocks) {
-                layout.addView(b.getView());
+                if(b!=null)
+                    layout.addView(b.getView());
             }
         }
 
@@ -146,8 +150,13 @@ public class HanoiActivityReformatted extends AppCompatActivity {
             return out;
         }
 
-        public void onclick(View v) {
-            selTower(id);
-        }
+        //public void onclick(View v) {
+        //    selTower(id);
+        public View.OnClickListener onclick = new View.OnClickListener() {
+            public void onClick(View view) {
+                Log.d("Hanoi", "Tower " + id + " has been selected");
+                selTower(id);
+            }
+        };
     }
 }
