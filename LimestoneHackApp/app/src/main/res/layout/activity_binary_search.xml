@@ -48,4 +48,9 @@
 
     </LinearLayout>
 
+    <TextView
+        style="@style/binary_labels"
+        android:text="----------------How to Play--------------------"
+        android:layout_width="match_parent" />
+
 </LinearLayout>

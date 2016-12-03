@@ -21,7 +21,6 @@ public class BinarySearchActivity extends AppCompatActivity {
         TextView string_progress_message = (TextView) findViewById(R.id.string_progress_message);
         TextView numGuesses = (TextView) findViewById(R.id.num_guesses);
         TextView lastGuess = (TextView) findViewById(R.id.last_guess);
-
         EditText num_user_input = (EditText) findViewById(R.id.num_user_input);
 
 
