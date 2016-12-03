@@ -8,13 +8,14 @@
     tools:context="com.example.android.limestonehackapp.BinarySearchActivity">
 
     <TextView
+        android:id="@+id/last_guess"
         style="@style/binary_labels"
-        android:text="Last Guess: " />
+        android:text="@string/last_guess" />
 
     <TextView
         android:id="@+id/num_guesses"
         style="@style/binary_labels"
-        android:text="Number of Guesses:" />
+        android:text="@string/number_of_guesses" />
 
     <TextView
         android:id="@+id/string_progress_message"
