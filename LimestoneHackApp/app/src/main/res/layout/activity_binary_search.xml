@@ -36,7 +36,8 @@
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
             android:textSize="24sp"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="4"/>
 
 
         <ImageView
