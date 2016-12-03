@@ -146,7 +146,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
             return out;
         }
 
-        public void onclick() {
+        public void onclick(View v) {
             selTower(id);
         }
     }
