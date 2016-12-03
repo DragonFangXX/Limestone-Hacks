@@ -28,7 +28,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
     protected void init() {
         HanoiBlock[] blocks = new HanoiBlock[discs];
         for(int i = 0; i<discs; i++)
-            blocks[i] = new HanoiBlock(discs - i);
+            blocks[i] = new HanoiBlock(discs - 1 - i);
 
         towers[0] = new HanoiTower(blocks, 0, (LinearLayout) findViewById(R.id.ht_src), (LinearLayout) findViewById(R.id.hp_src));
         towers[1] = new HanoiTower(discs,  1, (LinearLayout) findViewById(R.id.ht_aux), (LinearLayout) findViewById(R.id.hp_aux));
