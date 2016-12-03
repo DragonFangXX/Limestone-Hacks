@@ -122,20 +122,21 @@ public class HanoiActivityReformatted extends AppCompatActivity {
 
         public void moveTopTo(HanoiTower t) {
             if(0<=top) {
+                layout.removeAllViews();
                 t.addToTop(blocks[top]);
                 blocks[top] = null;
                 if(-1 < top) top--;
-                refresh();
+                refresh(false);
             }
         }
 
         protected void addToTop(HanoiBlock b) {
             blocks[++top] = b;
-            refresh();
+            refresh(true);
         }
 
-        private void refresh() {
-            layout.removeAllViews();
+        private void refresh(boolean clear) {
+            if(clear) layout.removeAllViews();
             for(HanoiBlock b : blocks) {
                 layout.addView(b.getView());
             }
