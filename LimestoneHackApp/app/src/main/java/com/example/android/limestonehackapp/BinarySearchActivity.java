@@ -37,7 +37,7 @@ public class BinarySearchActivity extends AppCompatActivity {
 
         num_guesses++;
 
-        lastGuess.setText();
+        lastGuess.setText(getString(R.string.last_guess), Integer.toString(userInput));
         numGuesses.setText(getString(R.string.number_of_guesses, Integer.toString(num_guesses)));
         num_user_input.setText("");
     }
