@@ -1,0 +1,3 @@
+num_user_input -> The number that the user guesses
+num_guesses -> the number of times the user has guessed
+string_progress_message -> "Too Low!", "Too High!", and "Success!"
