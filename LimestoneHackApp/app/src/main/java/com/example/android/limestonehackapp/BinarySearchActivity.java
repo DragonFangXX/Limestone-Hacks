@@ -19,7 +19,7 @@ public class BinarySearchActivity extends AppCompatActivity {
     int userInput = Integer.parseInt(num_user_input.getText().toString()); // User's initial Guess
     int n = (int) (Math.round(((Math.random())*1000))); //Generates random number between 1-1000
 
-    public void potato(String[]args) {
+    public void compare_loop {
         while (cmp != 0) {
             if (userInput > n) {
 
