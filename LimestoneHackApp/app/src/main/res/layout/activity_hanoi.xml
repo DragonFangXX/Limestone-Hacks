@@ -84,8 +84,7 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:background="@drawable/">
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:orientation="vertical"
