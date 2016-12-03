@@ -26,7 +26,7 @@
                 android:id="@+id/ht_src"
                 android:layout_height="180dp"
                 android:layout_alignParentBottom="true"
-                android:onClick="onclic">
+                android:onClick="onclick">
 
                 <ImageView
                     android:layout_width="match_parent"
