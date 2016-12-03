@@ -32,7 +32,7 @@ public class BinarySearchActivity extends AppCompatActivity {
                 cmp = 0; //User input is equal to the generated number
                 string_progress_message.setText("Success!");
             }
-            userInput = Integer.parseInt(myEditText.getText().toString());
+            userInput = Integer.parseInt(num_user_input.getText().toString());
             System.out.println(num_guesses);
             num_guesses++;
         }
