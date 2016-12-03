@@ -56,11 +56,13 @@ public class HanoiActivity extends AppCompatActivity {
                 selecting_src = false;
             }
             else {
-                sel_tgt = i;
-                towers[sel_src].moveTopTo(towers[sel_tgt]);
-                if(towers[sel_tgt].print().equals(win_string))
-                    win();
-                selecting_src = true;
+                if(i != sel_src) {
+                    sel_tgt = i;
+                    towers[sel_src].moveTopTo(towers[sel_tgt]);
+                    if(towers[sel_tgt].print().equals(win_string))
+                        win();
+                    selecting_src = true;
+                }
             }
         }
 
@@ -82,6 +84,7 @@ public class HanoiActivity extends AppCompatActivity {
             public int getSize() {
                 return size;
             }
+            public View getView() { return image; }
         }
 
 /**************************************************************************************************/
@@ -122,6 +125,13 @@ public class HanoiActivity extends AppCompatActivity {
 
             protected void addToTop(HanoiBlock b) {
                 blocks[++top] = b;
+            }
+
+            private void refresh() {
+                layout.removeAllViews();
+                for(HanoiBlock b : blocks) {
+                    layout.addView(b.getView());
+                }
             }
 
             public String print() {
