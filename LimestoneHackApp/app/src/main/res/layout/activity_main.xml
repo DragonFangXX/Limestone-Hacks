@@ -10,24 +10,28 @@
 
     <TextView
         style="@style/main_header"
+        android:background="#fb8c00"
         android:text="@string/binary_search_game"
         android:onClick="openBinarySearch"/>
 
-    <ImageView
+    <!--<ImageView
         android:src="@drawable/binary_search"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:layout_width="225dp"
-        android:layout_height="110dp"
-        android:id="@+id/imageView" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:
+        android:id="@+id/imageView" />-->
 
     <TextView
         android:id="@+id/textView"
         style="@style/main_header"
+        android:background="#e64a19"
         android:text="@string/recursion"
         android:onClick="openRecursion" />
 
     <TextView
         style="@style/main_header"
+        android:background="#689f38"
         android:text="@string/extra_help"/>
 </LinearLayout>
