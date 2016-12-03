@@ -12,16 +12,16 @@
         style="@style/main_header"
         android:background="#fb8c00"
         android:text="@string/binary_search_game"
-        android:onClick="openBinarySearch"/>
+        android:onClick="showBinaryDrop"/>
 
-    <!--<ImageView
+    <ImageView
         android:src="@drawable/binary_search"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:
-        android:id="@+id/imageView" />-->
+        android:visibility="gone"
+        android:id="@+id/binaryImg" />
 
     <TextView
         android:id="@+id/textView"
