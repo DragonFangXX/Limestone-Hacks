@@ -2,36 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.limestonehackapp.MainActivity"
-    android:weightSum="1">
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.android.limestonehackapp.MainActivity">
 
     <TextView
         style="@style/main_header"
         android:background="#fb8c00"
-        android:text="@string/binary_search_game"
-        android:onClick="openBinarySearch"/>
+        android:onClick="showBinaryDrop"
+        android:text="@string/binary_search_game" />
 
-    <ImageView
-        android:src="@drawable/binary_search"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:visibility="gone"
-        android:id="@+id/binaryImg" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/binaryImg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/binary_search"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/bin_how_to_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:text="A binary search is an efficient way to find a value in an ordered list. Try to guess a number between 1-1000 in as few guesses as possible!"/>
+        <Button
+            android:id="@+id/bin_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLAY!"
+            android:visibility="gone"
+            android:onClick="openBinarySearch"/>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
         style="@style/main_header"
         android:background="#e64a19"
-        android:text="@string/recursion"
-        android:onClick="openRecursion" />
+        android:onClick="openRecursion"
+        android:text="@string/recursion" />
 
     <TextView
         style="@style/main_header"
         android:background="#689f38"
-        android:text="@string/extra_help"/>
+        android:text="@string/extra_help" />
 </LinearLayout>
