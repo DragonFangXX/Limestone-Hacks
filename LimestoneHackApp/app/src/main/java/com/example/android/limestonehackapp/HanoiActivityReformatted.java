@@ -72,6 +72,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
     }
 
     public void win() {
+        Log.d("Hanoi", "WINNNNNNNNERRRRRRRRR!");
         System.exit(0);
     }
 
@@ -151,6 +152,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         //    selTower(id);
         public View.OnClickListener onclick = new View.OnClickListener() {
             public void onClick(View view) {
+                Log.d("Hanoi", "Tower " + id + " has been selected");
                 selTower(id);
             }
         };
