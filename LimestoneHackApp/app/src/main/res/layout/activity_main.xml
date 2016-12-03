@@ -13,8 +13,17 @@
         android:text="@string/binary_search_game"
         android:onClick="openBinarySearch"/>
 
+    <ImageView
+        android:src="@drawable/binary_search"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="225dp"
+        android:layout_height="110dp"
+        android:id="@+id/imageView" />
+
     <TextView
         style="@style/main_header"
         android:text="@string/recursion"
-        android:onClick="openRecursion" />
+        android:onClick="openRecursion"
+        android:id="@+id/textView" />
 </LinearLayout>
