@@ -3,7 +3,7 @@ package com.example.android.limestonehackapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class RecursionActivity extends AppCompatActivity {
+public class HanoiActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,6 @@ public class RecursionActivity extends AppCompatActivity {
                 blocks[i] = new HanoiBlock(i+1);
 
             towers[0] = new HanoiTower(blocks);
-
-
         }
 
         public void solve(int discs, HanoiTower src, HanoiTower tgt, HanoiTower aux) {
@@ -74,16 +72,12 @@ public class RecursionActivity extends AppCompatActivity {
             }
 
             public void moveTopTo(HanoiTower t) {
-                System.out.println(this + " .-> " + top);
-                System.out.println("Shifting: " + blocks[top].getSize() + " to " + t);
                 t.addToTop(blocks[top]);
                 blocks[top] = null;
                 if(-1 < top) top--;
             }
 
             protected void addToTop(HanoiBlock b) {
-                System.out.println(this);
-                System.out.println("Adding: " + b.getSize() + " to " + this);
                 blocks[++top] = b;
             }
 
@@ -91,7 +85,6 @@ public class RecursionActivity extends AppCompatActivity {
                 String out = "";
                 for(HanoiBlock b : blocks)
                     out += (b!=null? b.getSize() : 0);
-                System.out.println(out);
             }
         }
     }
