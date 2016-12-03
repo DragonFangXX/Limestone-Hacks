@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BinarySearchActivity"></activity>
+        <activity android:name=".BinarySearchActivity" />
+        <activity android:name=".RecursionActivity"></activity>
     </application>
 
 </manifest>
