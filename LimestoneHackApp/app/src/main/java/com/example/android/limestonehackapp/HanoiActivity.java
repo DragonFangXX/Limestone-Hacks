@@ -118,10 +118,12 @@ public class HanoiActivity extends AppCompatActivity {
             }
 
             public void moveTopTo(HanoiTower t) {
-                t.addToTop(blocks[top]);
-                blocks[top] = null;
-                if(-1 < top) top--;
-                refresh();
+                if(0<top) {
+                    t.addToTop(blocks[top]);
+                    blocks[top] = null;
+                    if(-1 < top) top--;
+                    refresh();
+                }
             }
 
             protected void addToTop(HanoiBlock b) {
