@@ -152,8 +152,10 @@ public class HanoiActivityReformatted extends AppCompatActivity {
             layout.addView(padding);
             for(int i=blocks.length-1; i>-1; i--) {
                 if(blocks[i]!=null) {
-                    params.height -= 10*(blocks[i].getSize())-20;
                     layout.addView(blocks[i].getView());
+                }
+                else {
+                    params.height -= 10*(blocks[i].getSize())-20;
                 }
             }
             padding.setLayoutParams(params);
