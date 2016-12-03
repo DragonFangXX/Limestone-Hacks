@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".BinarySearchActivity" android:label="Binary Search Fun"/>
-        <activity android:name=".RecursionActivity"></activity>
+        <activity android:name=".HanoiActivity" android:label="HAAAANNNOOOOI"></activity>
     </application>
 
 </manifest>
