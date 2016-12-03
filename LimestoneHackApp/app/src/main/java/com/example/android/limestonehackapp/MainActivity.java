@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openRecursion(View view){
-        Intent intent = new Intent(this, HanoiActivityReformatted.class);
+        Intent intent = new Intent(this, HanoiActivity.class);
         startActivity(intent);
     }
 
