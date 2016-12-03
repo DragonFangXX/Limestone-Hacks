@@ -21,6 +21,12 @@
             android:layout_width="128dp">
 
             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/hp_src"></LinearLayout>
+
+            <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="128dp"
                 android:id="@+id/ht_src"
@@ -60,16 +66,30 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/hp_aux"></LinearLayout>
+
+            <LinearLayout
                 android:orientation="vertical"
                 android:layout_height="180dp"
                 android:layout_width="128dp"
                 android:id="@+id/ht_aux"
-                android:layout_alignParentBottom="true"></LinearLayout>
+                android:layout_alignParentBottom="true">
+
+            </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="128dp"
             android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/hp_tgt"></LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
