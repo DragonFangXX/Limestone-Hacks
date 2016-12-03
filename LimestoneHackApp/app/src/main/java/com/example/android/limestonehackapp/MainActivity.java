@@ -39,6 +39,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void showExtraHelpDrop(View view){
+        TextView extraInstruction = (TextView) findViewById(R.id.extra_help_instruction);
+        Button extraBtn = (Button)findViewById(R.id.extra_help_button);
+
+        if (extraInstruction.getVisibility() == View.VISIBLE){
+            extraInstruction.setVisibility(View.GONE);
+            extraBtn.setVisibility(View.GONE);
+        }
+        else {
+            extraInstruction.setVisibility(View.VISIBLE);
+            extraBtn.setVisibility(View.VISIBLE);
+        }
+    }
+
     public void openRecursion(View view){
         Intent intent = new Intent(this, HanoiActivity.class);
         startActivity(intent);
