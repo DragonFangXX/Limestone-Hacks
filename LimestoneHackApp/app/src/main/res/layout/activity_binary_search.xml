@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.android.limestonehackapp.BinarySearchActivity">
+
     <TextView
         style="@style/binary_labels"
         android:text="Last Guess: " />
@@ -13,20 +14,31 @@
     <TextView
         android:id="@+id/num_guesses"
         style="@style/binary_labels"
-        android:text="Number of Guesses:"/>
-    <EditText
-        android:paddingTop="16dp"
-        android:paddingLeft="16dp"
-        android:id="@+id/num_user_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:hint="New Guess"
-        android:inputType="number"/>
+        android:text="Number of Guesses:" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/num_user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Guess"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:src="@drawable/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/string_progress_message"
         style="@style/binary_labels"
-        android:text="Take a guess!"/>
+        android:text="Take a guess!" />
 
 </LinearLayout>
