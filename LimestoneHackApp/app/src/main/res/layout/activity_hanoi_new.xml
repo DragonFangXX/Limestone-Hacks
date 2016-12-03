@@ -31,7 +31,7 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:background="blue"
+                    android:background="#F00"
                     android:layout_height="1dp"
                     android:id="@+id/hp_src"></LinearLayout>
 
@@ -76,7 +76,7 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:background="blue"
+                    android:background="#F00"
                     android:layout_height="1dp"
                     android:id="@+id/hp_aux"></LinearLayout>
             </LinearLayout>
@@ -96,7 +96,7 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:background="blue"
+                    android:background="#F00"
                     android:layout_height="1dp"
                     android:id="@+id/hp_tgt"></LinearLayout>
             </LinearLayout>
