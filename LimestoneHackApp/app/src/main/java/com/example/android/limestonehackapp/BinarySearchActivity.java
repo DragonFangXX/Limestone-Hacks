@@ -17,17 +17,28 @@ public class BinarySearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_binary_search);
-
     }
 
-    public void compare_loop(View view) {
+    public void check(View view){
         TextView string_progress_message = (TextView) findViewById(R.id.string_progress_message);
+        EditText num_user_input = (EditText) findViewById(R.id.num_user_input);
+        String textInput = num_user_input.getText().toString();
+
+        if (textInput.isEmpty() || textInput.equals(null)){
+            string_progress_message.setText("Invalid input!");
+        }
+        else{
+            compare_loop(string_progress_message, num_user_input, textInput);
+        }
+    }
+
+    public void compare_loop(TextView string_progress_message, EditText num_user_input, String textInput) {
         TextView numGuesses = (TextView) findViewById(R.id.num_guesses);
         TextView lastGuess = (TextView) findViewById(R.id.last_guess);
-        EditText num_user_input = (EditText) findViewById(R.id.num_user_input);
         MediaPlayer mp = MediaPlayer.create(this,R.raw.sound);
+        int userInput;
 
-        int userInput = Integer.parseInt(num_user_input.getText().toString()); // User's initial Guess
+        userInput = Integer.parseInt(textInput); // User's initial Guess
 
         if (userInput > 1000||userInput < 0) {
             string_progress_message.setText("Invalid!");
