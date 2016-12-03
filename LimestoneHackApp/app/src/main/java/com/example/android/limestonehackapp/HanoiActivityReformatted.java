@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.util.Log;
 
 public class HanoiActivityReformatted extends AppCompatActivity {
@@ -146,13 +147,16 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         private void refresh(boolean clear) {
             if(clear) layout.removeAllViews();
             padding.setMinimumHeight(0);
+            LayoutParams params = (LayoutParams) padding.getLayoutParams();
+            params.height = 0;
             layout.addView(padding);
             for(int i=blocks.length-1; i>-1; i--) {
                 if(blocks[i]!=null) {
-                    padding.setMinimumHeight(padding.getHeight() + 20 + 10*(blocks[i].getSize()));
+                    params.height += 20 + 10*(blocks[i].getSize());
                     layout.addView(blocks[i].getView());
                 }
             }
+            padding.setLayoutParams(params);
         }
 
         public String print() {
