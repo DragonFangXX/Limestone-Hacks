@@ -15,7 +15,6 @@
 
     <TextView
         style="@style/main_header"
-        android:text="Recursion"
-        android:layout_height="wrap_content"
-         />
+        android:text="@string/recursion"
+        android:onClick="openRecursion" />
 </LinearLayout>

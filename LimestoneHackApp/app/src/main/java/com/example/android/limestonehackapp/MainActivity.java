@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BinarySearchActivity.class);
         startActivity(intent);
     }
+
+    public void openRecursion(View view){
+        Intent intent = new Intent(this, RecursionActivity.class);
+        startActivity(intent);
+    }
 }
