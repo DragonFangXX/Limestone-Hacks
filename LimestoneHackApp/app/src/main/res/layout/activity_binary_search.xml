@@ -15,7 +15,7 @@
     <TextView
         android:id="@+id/num_guesses"
         style="@style/binary_labels"
-        android:text="@string/number_of_guesses" />
+        android:text="@string/binary_search_game" />
 
     <TextView
         android:id="@+id/string_progress_message"

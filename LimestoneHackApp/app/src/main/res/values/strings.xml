@@ -1,6 +1,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">LimestoneHackApp</string>
     <string name="binary_search_game">Binary Search Game</string>
-    <string name="number_of_guesses">Number of Guesses: <xliff:g id="number_of_guess"></xliff:g></string>
-    <string name="last_guess">Last Guess: <xliff:g id="last_guess"></xliff:g></string>
+    <string name="number_of_guesses">Number of Guesses: <xliff:g id="number_of_guess">%s</xliff:g></string>
+    <string name="last_guess">Last Guess: <xliff:g id="last_guess">%s</xliff:g></string>
 </resources>
