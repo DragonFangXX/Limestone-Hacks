@@ -28,10 +28,8 @@ public class BinarySearchActivity extends AppCompatActivity {
         MediaPlayer mp = MediaPlayer.create(this,R.raw.sound);
 
         int userInput = Integer.parseInt(num_user_input.getText().toString()); // User's initial Guess
-        if (userInput>=10000){
-            userInput%=10000;
-        }
-        if (userInput > 1000) {
+
+        if (userInput > 1000||userInput < 0) {
             string_progress_message.setText("Invalid!");
         } else if (userInput < n) {
             string_progress_message.setText("Too Low!");
@@ -39,7 +37,7 @@ public class BinarySearchActivity extends AppCompatActivity {
             string_progress_message.setText("Too High!");
         } else {
             string_progress_message.setText("Success!");
-            mp.start();
+            mp.start(); //Play glorious victory music
         }
 
         num_guesses++;
