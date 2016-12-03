@@ -15,8 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BinarySearchActivity" android:label="Binary Search Fun"/>
-        <activity android:name=".HanoiActivity" android:label="HAAAANNNOOOOI"></activity>
+        <activity
+            android:name=".BinarySearchActivity"
+            android:label="Binary Search Fun" />
+        <activity
+            android:name=".HanoiActivity"
+            android:label="HAAAANNNOOOOI" />
+        <activity android:name=".ExtraHelpActivity"></activity>
     </application>
 
 </manifest>

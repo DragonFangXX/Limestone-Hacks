@@ -43,4 +43,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, HanoiActivity.class);
         startActivity(intent);
     }
+
+    public void openExtraHelp(View view){
+        Intent intent = new Intent(this, ExtraHelpActivity.class);
+        startActivity(intent);
+    }
 }

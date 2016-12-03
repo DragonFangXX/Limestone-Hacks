@@ -63,9 +63,11 @@
             style="@style/main_header"
             android:background="#c0ca33"
             android:text="Linked Lists"/>
+
         <TextView
             style="@style/main_header"
             android:background="#689f38"
-            android:text="@string/extra_help" />
+            android:text="@string/extra_help"
+            android:onClick="openExtraHelp"/>
     </LinearLayout>
 </ScrollView>
