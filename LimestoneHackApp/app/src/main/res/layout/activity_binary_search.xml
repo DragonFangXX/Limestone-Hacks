@@ -53,4 +53,11 @@
         android:text="----------------How to Play--------------------"
         android:layout_width="match_parent" />
 
+    <TextView
+        style="@style/binary_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A binary search is an efficient way to find a value in an ordered list.
+Try to guess a number between 1-1000 in as few guesses as possible!"
+         />
 </LinearLayout>
