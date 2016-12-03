@@ -25,7 +25,7 @@
             android:theme="@style/RecursionTheme"/>
         <activity android:name=".ExtraHelpActivity"
             android:label="Additional Resources"
-            android:theme="@style/RecursionTheme"/>
+            android:theme="@style/ExtraHelpTheme"/>
         <activity android:name=".HanoiActivityReformatted"
             android:label="HAAAANNNOOOOI"
             android:theme="@style/RecursionTheme">
