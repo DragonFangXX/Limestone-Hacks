@@ -138,7 +138,8 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         private void refresh(boolean clear) {
             if(clear) layout.removeAllViews();
             for(HanoiBlock b : blocks) {
-                layout.addView(b.getView());
+                if(b!=null)
+                    layout.addView(b.getView());
             }
         }
 
