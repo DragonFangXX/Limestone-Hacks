@@ -23,8 +23,11 @@
             android:name=".HanoiActivity"
             android:label="HAAAANNNOOOOI" />
         <activity android:name=".ExtraHelpActivity"
-            android:label="Additional Resources"/>
-        <activity android:name=".HanoiActivityReformatted">
+            android:label="Additional Resources"
+            android:theme="@style/RecursionTheme"/>
+        <activity android:name=".HanoiActivityReformatted"
+            android:label="HAAAANNNOOOOI"
+            android:theme="@style/RecursionTheme">
         </activity>
     </application>
 

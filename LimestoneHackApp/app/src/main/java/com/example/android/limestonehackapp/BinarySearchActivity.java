@@ -25,7 +25,7 @@ public class BinarySearchActivity extends AppCompatActivity {
         String textInput = num_user_input.getText().toString();
 
         if (textInput.isEmpty() || textInput.equals(null)){
-            string_progress_message.setText("Invalid input!");
+            string_progress_message.setText(getString(R.string.invalid));
         }
         else{
             compare_loop(string_progress_message, num_user_input, textInput);
@@ -41,13 +41,13 @@ public class BinarySearchActivity extends AppCompatActivity {
         userInput = Integer.parseInt(textInput); // User's initial Guess
 
         if (userInput > 1000||userInput < 0) {
-            string_progress_message.setText("Invalid!");
+            string_progress_message.setText(getString(R.string.invalid));
         } else if (userInput < n) {
-            string_progress_message.setText("Too Low!");
+            string_progress_message.setText(getString(R.string.too_low));
         } else if(userInput > n){
-            string_progress_message.setText("Too High!");
+            string_progress_message.setText(getString(R.string.too_high));
         } else {
-            string_progress_message.setText("Success!");
+            string_progress_message.setText(getString(R.string.success));
             mp.start(); //Play glorious victory music
         }
 

@@ -13,6 +13,12 @@
         <item name="colorPrimaryDark">#ef6c00</item>
         <item name="colorAccent">#ffb74d</item>
     </style>
+
+    <style name="RecursionTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#ff5722</item>
+        <item name="colorPrimaryDark">#d84315</item>
+        <item name="colorAccent">#ff8a65</item>
+    </style>
     <style name="main_header">
         <item name="android:paddingTop">32dp</item>
         <item name="android:paddingLeft">16dp</item>
