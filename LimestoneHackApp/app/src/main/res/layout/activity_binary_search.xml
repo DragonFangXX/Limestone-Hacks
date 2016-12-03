@@ -47,5 +47,5 @@
             android:onClick="compare_loop"/>
 
     </LinearLayout>
-    
+
 </LinearLayout>
