@@ -7,8 +7,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:id="@+id/h_frame">
+        android:id="@+id/h_frame"
+        android:layout_height="210dp">
 
     </FrameLayout>
 
@@ -18,87 +18,87 @@
         android:layout_height="match_parent">
 
         <RelativeLayout android:layout_width="128dp"
-            android:layout_height="312dp">
+            android:layout_height="620px">
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="128dp"
                 android:id="@+id/ht_src"
-                android:layout_height="180dp"
                 android:layout_alignParentBottom="true"
-                android:onClick="onclick">
+                android:onClick="onclick"
+                android:layout_height="360px">
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:background="#F00"
-                    android:layout_height="1dp"
-                    android:id="@+id/hp_src"></LinearLayout>
+                    android:id="@+id/hp_src"
+                    android:layout_height="1px"></LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     app:srcCompat="@drawable/small_box"
                     android:id="@+id/hb_1"
-                    android:layout_height="30dp" />
+                    android:layout_height="50px" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     app:srcCompat="@drawable/medium_box"
                     android:id="@+id/hb_2"
-                    android:layout_height="40dp" />
+                    android:layout_height="75px" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
                     app:srcCompat="@drawable/large_box"
-                    android:id="@+id/hb_3" />
+                    android:id="@+id/hb_3"
+                    android:layout_height="100px" />
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
                     app:srcCompat="@drawable/largest_box"
-                    android:id="@+id/hb_4" />
+                    android:id="@+id/hb_4"
+                    android:layout_height="125px" />
 
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="128dp"
-            android:layout_height="312dp">
+            android:layout_height="620px">
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_height="180dp"
                 android:layout_width="128dp"
                 android:id="@+id/ht_aux"
-                android:layout_alignParentBottom="true">
+                android:layout_alignParentBottom="true"
+                android:layout_height="360px">
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:background="#F00"
-                    android:layout_height="1dp"
-                    android:id="@+id/hp_aux"></LinearLayout>
+                    android:id="@+id/hp_aux"
+                    android:layout_height="1px"></LinearLayout>
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="128dp"
-            android:layout_height="312dp">
+            android:layout_height="620px">
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_height="180dp"
                 android:layout_width="128dp"
                 android:id="@+id/ht_tgt"
-                android:layout_alignParentBottom="true">
+                android:layout_alignParentBottom="true"
+                android:layout_height="360px">
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:background="#F00"
-                    android:layout_height="1dp"
-                    android:id="@+id/hp_tgt"></LinearLayout>
+                    android:id="@+id/hp_tgt"
+                    android:layout_height="1px"></LinearLayout>
             </LinearLayout>
         </RelativeLayout>
 
