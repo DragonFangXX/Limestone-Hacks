@@ -9,13 +9,14 @@
 
     <TextView
         android:id="@+id/last_guess"
+        android:layout_marginTop="16dp"
         style="@style/binary_labels"
         android:text="@string/last_guess" />
 
     <TextView
         android:id="@+id/num_guesses"
         style="@style/binary_labels"
-        android:text="@string/binary_search_game" />
+        android:text="@string/number_of_guesses" />
 
     <TextView
         android:id="@+id/string_progress_message"

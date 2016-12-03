@@ -11,8 +11,7 @@ public class HanoiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recursion);
-        new Hanoi();
+        setContentView(R.layout.activity_hanoi);
     }
 
 /**************************************************************************************************/
