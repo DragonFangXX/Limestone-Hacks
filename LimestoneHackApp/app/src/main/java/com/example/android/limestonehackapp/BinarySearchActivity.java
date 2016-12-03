@@ -12,14 +12,15 @@ public class BinarySearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_binary_search);
     }
-    TextView string_progress_message = (TextView)findViewById(R.id.string_progress_message);
-    EditText num_user_input = (EditText)findViewById(R.id.num_user_input);
-    int num_guesses =0; //Counter for # of tries
-    int cmp = 2; // sentinel valuet
-    int userInput = Integer.parseInt(num_user_input.getText().toString()); // User's initial Guess
-    int n = (int) (Math.round(((Math.random())*1000))); //Generates random number between 1-1000
 
     public void compare_loop() {
+        TextView string_progress_message = (TextView)findViewById(R.id.string_progress_message);
+        EditText num_user_input = (EditText)findViewById(R.id.num_user_input);
+        int num_guesses =0; //Counter for # of tries
+        int cmp = 2; // sentinel valuet
+        int userInput = Integer.parseInt(num_user_input.getText().toString()); // User's initial Guess
+        int n = (int) (Math.round(((Math.random())*1000))); //Generates random number between 1-1000
+
         while (cmp != 0) {
             if (userInput > n) {
 
