@@ -5,10 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
+import android.media.MediaPlayer;
 
 public class BinarySearchActivity extends AppCompatActivity {
     public int n = (int) (Math.round(((Math.random()) * 1000))); //Generates random number between 1-1000
     public int num_guesses = 0; //Counter for # of tries
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,7 @@ public class BinarySearchActivity extends AppCompatActivity {
         TextView numGuesses = (TextView) findViewById(R.id.num_guesses);
         TextView lastGuess = (TextView) findViewById(R.id.last_guess);
         EditText num_user_input = (EditText) findViewById(R.id.num_user_input);
-
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sound);
 
         int userInput = Integer.parseInt(num_user_input.getText().toString()); // User's initial Guess
         if (userInput>=10000){
@@ -36,6 +39,7 @@ public class BinarySearchActivity extends AppCompatActivity {
             string_progress_message.setText("Too High!");
         } else {
             string_progress_message.setText("Success!");
+            mp.start();
         }
 
         num_guesses++;
