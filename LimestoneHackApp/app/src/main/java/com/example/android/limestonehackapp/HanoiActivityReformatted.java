@@ -83,7 +83,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
 
         public HanoiBlock(int size) {
             this.size = size;
-            this.image = (ImageView) findViewById(hbid[size]);
+            this.image = (ImageView) findViewById(hbid[size-1]);
         }
 
         public int getSize() {
