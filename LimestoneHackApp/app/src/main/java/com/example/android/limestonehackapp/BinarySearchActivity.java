@@ -26,10 +26,12 @@ public class BinarySearchActivity extends AppCompatActivity {
 
         int userInput = Integer.parseInt(num_user_input.getText().toString()); // User's initial Guess
 
-        if (userInput > n) {
-            string_progress_message.setText("Too High!");
+        if (userInput > 1000) {
+            string_progress_message.setText("Invalid!");
         } else if (userInput < n) {
             string_progress_message.setText("Too Low!");
+        } else if(userInput > n){
+            string_progress_message.setText("Too High!");
         } else {
             string_progress_message.setText("Success!");
         }
