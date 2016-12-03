@@ -25,6 +25,14 @@ public class RecursionActivity extends AppCompatActivity {
 
             towers[0] = new HanoiTower(blocks);
         }
+
+        public void solve(int discs, HanoiTower src, HanoiTower tgt, HanoiTower aux) {
+            if(discs>0) {
+                solve(discs-1, src, aux, tgt);
+                src.moveTopTo(tgt);
+                solve(discs-1, aux, src, tgt);
+            }
+        }
     }
 
     protected class HanoiBlock {
