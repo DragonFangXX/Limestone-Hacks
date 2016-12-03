@@ -15,12 +15,14 @@
     <TextView
         style="@style/binary_labels"
         android:text="Codeacademy (Videos)"
-        android:id="@+id/textView" />
+        android:id="@+id/code_page" />
 
     <TextView
+        android:id="@+id/python_page"
         style="@style/binary_labels"
         android:text="http://greenteapress.com/wp/think-python-2e/"
         android:layout_height="90dp"
+        android:onClick="getURL"
         />
 </LinearLayout>
 
