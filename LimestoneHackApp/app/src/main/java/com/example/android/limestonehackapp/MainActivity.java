@@ -61,6 +61,24 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void showLinkedListDrop(View view){
+        ImageView foxImg1 = (ImageView)findViewById(R.id.foxImg1);
+        ImageView foxImg2 = (ImageView)findViewById(R.id.foxImg2);
+        ImageView foxImg3 = (ImageView)findViewById(R.id.foxImg3);
+
+
+        if (foxImg1.getVisibility() == View.VISIBLE){
+            foxImg1.setVisibility(View.GONE);
+            foxImg2.setVisibility(View.GONE);
+            foxImg3.setVisibility(View.GONE);
+        }
+        else {
+            foxImg1.setVisibility(View.VISIBLE);
+            foxImg2.setVisibility(View.VISIBLE);
+            foxImg3.setVisibility(View.VISIBLE);
+        }
+    }
+
     public void openExtraHelp(View view){
         Intent intent = new Intent(this, ExtraHelpActivity.class);
         startActivity(intent);

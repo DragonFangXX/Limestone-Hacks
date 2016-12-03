@@ -60,7 +60,38 @@
         <TextView
             style="@style/main_header"
             android:background="#c0ca33"
-            android:text="Linked Lists"/>
+            android:text="Linked Lists"
+            android:onClick="showLinkedListDrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/foxImg1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/fox"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/foxImg2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/fox"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/foxImg3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/fox"
+            android:visibility="gone" />
 
         <TextView
             style="@style/main_header"
