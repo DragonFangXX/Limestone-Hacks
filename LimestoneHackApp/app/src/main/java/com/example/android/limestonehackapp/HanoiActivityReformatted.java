@@ -104,6 +104,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         private HanoiTower(int id, LinearLayout lt) {
             this.id = id;
             this.layout = lt;
+            this.layout.setOnClickListener(onclick);
         }
 
         public HanoiTower(HanoiBlock[] blocks, int id, LinearLayout lt) {
@@ -146,8 +147,12 @@ public class HanoiActivityReformatted extends AppCompatActivity {
             return out;
         }
 
-        public void onclick(View v) {
-            selTower(id);
-        }
+        //public void onclick(View v) {
+        //    selTower(id);
+        public View.OnClickListener onclick = new View.OnClickListener() {
+            public void onClick(View view) {
+                selTower(id);
+            }
+        };
     }
 }
