@@ -65,7 +65,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
                 sel_tgt = i;
                 Log.d("Hanoi", "Shifting towers");
                 towers[sel_src].moveTopTo(towers[sel_tgt]);
-                if(towers[sel_tgt].print().equals(win_string))
+                if(towers[2].print().equals(win_string))
                     win();
                 selecting_src = true;
             }
@@ -148,11 +148,11 @@ public class HanoiActivityReformatted extends AppCompatActivity {
             if(clear) layout.removeAllViews();
             padding.setMinimumHeight(0);
             LayoutParams params = (LayoutParams) padding.getLayoutParams();
-            params.height = 0;
+            params.height = layout.getHeight();
             layout.addView(padding);
             for(int i=blocks.length-1; i>-1; i--) {
                 if(blocks[i]!=null) {
-                    params.height += 20 + 10*(blocks[i].getSize());
+                    params.height -= 10*(blocks[i].getSize())-20;
                     layout.addView(blocks[i].getView());
                 }
             }
