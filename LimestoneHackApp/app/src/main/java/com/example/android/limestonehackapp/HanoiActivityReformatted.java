@@ -159,6 +159,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
             String out = "";
             for(HanoiBlock b : blocks)
                 out += (b!=null? b.getSize() : 0);
+            Log.d("Print", out);
             return out;
         }
 
