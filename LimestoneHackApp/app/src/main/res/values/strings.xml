@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LimestoneHackApp</string>
+    <string name="binary_search_game">Binary Search Game</string>
 </resources>
