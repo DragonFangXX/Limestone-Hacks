@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:id="@+id/h_frame"
-        android:layout_height="925px">
+        android:layout_height="fill_parent"
+        android:layout_weight="60">
 
-    </FrameLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="fill_parent"
+        android:layout_weight="50">
 
         <RelativeLayout android:layout_width="128dp"
-            android:layout_height="620px">
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/ht_src"
                 android:layout_alignParentBottom="true"
                 android:onClick="onclick"
-                android:layout_height="360px"
+                android:layout_height="match_parent"
                 android:layout_width="115dp">
 
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:id="@+id/hp_src"
-                    android:layout_height="1px"></LinearLayout>
+                    android:layout_weight="100">
+
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -63,39 +67,42 @@
 
         <RelativeLayout
             android:layout_width="128dp"
-            android:layout_height="620px">
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/ht_aux"
                 android:layout_alignParentBottom="true"
-                android:layout_height="360px"
+                android:layout_height="match_parent"
                 android:layout_width="106dp">
 
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:id="@+id/hp_aux"
-                    android:layout_height="1px"></LinearLayout>
+                    android:layout_weight="100">
+
+                </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="128dp"
-            android:layout_height="620px">
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/ht_tgt"
                 android:layout_alignParentBottom="true"
-                android:layout_height="360px"
+                android:layout_height="match_parent"
                 android:layout_width="102dp">
 
-                <LinearLayout
-                    android:orientation="horizontal"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:id="@+id/hp_tgt"
-                    android:layout_height="1px"></LinearLayout>
+                    android:layout_height="match_parent"
+                    android:id="@+id/hp_tgt">
+
+                </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
 

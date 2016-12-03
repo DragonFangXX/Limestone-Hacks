@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.util.Log;
+import android.widget.RelativeLayout;
 
 public class HanoiActivityReformatted extends AppCompatActivity {
     String win_string = "4321";
@@ -31,9 +32,9 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         for(int i = 0; i<discs; i++)
             blocks[i] = new HanoiBlock(discs - 1 - i);
 
-        towers[0] = new HanoiTower(blocks, 0, (LinearLayout) findViewById(R.id.ht_src), (LinearLayout) findViewById(R.id.hp_src));
-        towers[1] = new HanoiTower(discs,  1, (LinearLayout) findViewById(R.id.ht_aux), (LinearLayout) findViewById(R.id.hp_aux));
-        towers[2] = new HanoiTower(discs,  2, (LinearLayout) findViewById(R.id.ht_tgt), (LinearLayout) findViewById(R.id.hp_tgt));
+        towers[0] = new HanoiTower(blocks, 0, (LinearLayout) findViewById(R.id.ht_src), (RelativeLayout) findViewById(R.id.hp_src));
+        towers[1] = new HanoiTower(discs,  1, (LinearLayout) findViewById(R.id.ht_aux), (RelativeLayout) findViewById(R.id.hp_aux));
+        towers[2] = new HanoiTower(discs,  2, (LinearLayout) findViewById(R.id.ht_tgt), (RelativeLayout) findViewById(R.id.hp_tgt));
 
         win_string = towers[0].print();
     }
@@ -101,22 +102,22 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         private int id = 0;
 
         private LinearLayout layout;
-        private LinearLayout padding;
+        private RelativeLayout padding;
 
-        private HanoiTower(int id, LinearLayout lt, LinearLayout lp) {
+        private HanoiTower(int id, LinearLayout lt, RelativeLayout lp) {
             this.id = id;
             this.layout = lt;
             this.layout.setOnClickListener(onclick);
             this.padding = lp;
         }
 
-        public HanoiTower(HanoiBlock[] blocks, int id, LinearLayout lt, LinearLayout lp) {
+        public HanoiTower(HanoiBlock[] blocks, int id, LinearLayout lt, RelativeLayout lp) {
             this(id, lt, lp);
             this.blocks = blocks;
             this.top = blocks.length-1;
         }
 
-        public HanoiTower(int numblocks, int id, LinearLayout lt, LinearLayout lp) {
+        public HanoiTower(int numblocks, int id, LinearLayout lt, RelativeLayout lp) {
             this(id, lt, lp);
             this.blocks = new HanoiBlock[numblocks];
             this.top = -1;
@@ -154,7 +155,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
                     layout.addView(blocks[i].getView());
                 }
                 else {
-                    params.height += 25 + 25*(blocks.length-i);
+                    //params.height += 25 + 25*(blocks.length-i);
                 }
             }
 
