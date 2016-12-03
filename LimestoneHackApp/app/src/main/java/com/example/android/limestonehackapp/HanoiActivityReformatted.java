@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.util.Log;
 
 public class HanoiActivityReformatted extends AppCompatActivity {
     String win_string = "4321";
@@ -19,7 +20,9 @@ public class HanoiActivityReformatted extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hanoi_new);
+        Log.d("Hanoi","Initializing");
         init();
+        Log.d("Hanoi","Initialized");
     }
 
     protected void init() {
@@ -51,6 +54,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
     }
 
     public void selTower(int i) {
+        Log.d("Hanoi", "Selecting Tower " + i + " for " + (selecting_src?"source":"target"));
         if(selecting_src) {
             sel_src = i;
             selecting_src = false;
@@ -58,6 +62,7 @@ public class HanoiActivityReformatted extends AppCompatActivity {
         else {
             if(i != sel_src) {
                 sel_tgt = i;
+                Log.d("Hanoi", "Shifting towers");
                 towers[sel_src].moveTopTo(towers[sel_tgt]);
                 if(towers[sel_tgt].print().equals(win_string))
                     win();
@@ -143,6 +148,6 @@ public class HanoiActivityReformatted extends AppCompatActivity {
 
         public void onclick() {
             selTower(id);
-        };
+        }
     }
 }
