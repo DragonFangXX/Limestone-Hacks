@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.view.View;
+import android.widget.ImageView;
 
 public class HanoiActivity extends AppCompatActivity {
 
@@ -11,6 +12,7 @@ public class HanoiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recursion);
+        new Hanoi(4);
     }
 
 /**************************************************************************************************/
@@ -18,6 +20,7 @@ public class HanoiActivity extends AppCompatActivity {
         private HanoiTower[] towers = new HanoiTower[3];
         private boolean selecting_src = true;
         private int sel_src, sel_tgt, sel_aux;
+        private String win_string;
 
         public Hanoi(int discs) {
             HanoiBlock[] blocks = new HanoiBlock[discs];
@@ -27,6 +30,8 @@ public class HanoiActivity extends AppCompatActivity {
             towers[0] = new HanoiTower(blocks, this, 0, (LinearLayout) findViewById(R.id.ht_src));
             towers[1] = new HanoiTower(discs,  this, 1, (LinearLayout) findViewById(R.id.ht_aux));
             towers[2] = new HanoiTower(discs,  this, 2, (LinearLayout) findViewById(R.id.ht_tgt));
+
+            win_string = towers[0].print();
         }
 
         public void solve(int discs, HanoiTower src, HanoiTower tgt, HanoiTower aux) {
@@ -53,17 +58,25 @@ public class HanoiActivity extends AppCompatActivity {
             else {
                 sel_tgt = i;
                 towers[sel_src].moveTopTo(towers[sel_tgt]);
+                if(towers[sel_tgt].print().equals(win_string))
+                    win();
                 selecting_src = true;
             }
+        }
+
+        public void win() {
+            System.exit(0);
         }
 
 /**************************************************************************************************/
         protected class HanoiBlock {
 
             private int size = 0;
+            private ImageView image;
 
             public HanoiBlock(int size) {
                 this.size = size;
+
             }
 
             public int getSize() {
@@ -111,10 +124,11 @@ public class HanoiActivity extends AppCompatActivity {
                 blocks[++top] = b;
             }
 
-            public void print() {
+            public String print() {
                 String out = "";
                 for(HanoiBlock b : blocks)
                     out += (b!=null? b.getSize() : 0);
+                return out;
             }
 
             private View.OnClickListener onclick = new View.OnClickListener() {
