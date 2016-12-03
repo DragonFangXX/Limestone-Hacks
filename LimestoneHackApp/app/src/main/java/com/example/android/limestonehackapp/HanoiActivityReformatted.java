@@ -73,7 +73,6 @@ public class HanoiActivityReformatted extends AppCompatActivity {
 
     public void win() {
         Log.d("Hanoi", "WINNNNNNNNERRRRRRRRR!");
-        System.exit(0);
     }
 
 /**************************************************************************************************/
@@ -146,10 +145,12 @@ public class HanoiActivityReformatted extends AppCompatActivity {
 
         private void refresh(boolean clear) {
             if(clear) layout.removeAllViews();
-            for(HanoiBlock b : blocks) {
-                if(b!=null) {
-                    layout.addView(b.getView());
-                    padding.setMinimumHeight(padding.getHeight() + 20 + 10*(b.getSize()));
+            padding.setMinimumHeight(0);
+            layout.addView(padding);
+            for(int i=blocks.length-1; i>-1; i--) {
+                if(blocks[i]!=null) {
+                    padding.setMinimumHeight(padding.getHeight() + 20 + 10*(blocks[i].getSize()));
+                    layout.addView(blocks[i].getView());
                 }
             }
         }
