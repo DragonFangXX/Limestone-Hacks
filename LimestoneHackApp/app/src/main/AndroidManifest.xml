@@ -18,18 +18,20 @@
         <activity
             android:name=".BinarySearchActivity"
             android:label="Binary Search Fun"
-            android:theme="@style/BinaryTheme"/>
+            android:theme="@style/BinaryTheme" />
         <activity
             android:name=".HanoiActivity"
             android:label="HAAAANNNOOOOI"
-            android:theme="@style/RecursionTheme"/>
-        <activity android:name=".ExtraHelpActivity"
+            android:theme="@style/RecursionTheme" />
+        <activity
+            android:name=".ExtraHelpActivity"
             android:label="Additional Resources"
-            android:theme="@style/ExtraHelpTheme"/>
-        <activity android:name=".HanoiActivityReformatted"
+            android:theme="@style/ExtraHelpTheme" />
+        <activity
+            android:name=".HanoiActivityReformatted"
             android:label="HAAAANNNOOOOI"
-            android:theme="@style/RecursionTheme">
-        </activity>
+            android:theme="@style/RecursionTheme"></activity>
+        <activity android:name=".LinkedListActivity"></activity>
     </application>
 
 </manifest>
