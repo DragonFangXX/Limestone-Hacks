@@ -20,10 +20,16 @@
         <item name="colorAccent">#ff8a65</item>
     </style>
 
-    <style name="ExtraHelpTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="LinkedListTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#cddc39</item>
         <item name="colorPrimaryDark">#9e9d24</item>
         <item name="colorAccent">#dce775</item>
+    </style>
+
+    <style name="ExtraHelpTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimaryDark">#558b2f</item>
+        <item name="colorAccent">#aed581</item>
     </style>
 
     <style name="main_header">
