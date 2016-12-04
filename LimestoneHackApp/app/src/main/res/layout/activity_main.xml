@@ -49,8 +49,8 @@
         <TextView
             style="@style/main_header"
             android:background="#e64a19"
-            android:onClick="openRecursion"
-            android:text="@string/recursion" />
+            android:text="@string/recursion"
+            android:onClick="showHanoiDrop"/>
 
         <TextView
             android:id="@+id/hanoi_instruction"
@@ -59,9 +59,8 @@
             android:textSize="18sp"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text=""
-            android:visibility="gone"
-            android:onClick="showHanoiDrop"/>
+            android:text="HNOI HERE"
+            android:visibility="gone"/>
         <Button
             android:id="@+id/hanoi_button"
             android:layout_width="match_parent"
@@ -69,7 +68,7 @@
             android:textSize="16sp"
             android:visibility="gone"
             android:text="PLAY NOW"
-            android:onClick="openLinkedList"/>
+            android:onClick="openRecursion"/>
 
         <TextView
             style="@style/main_header"
