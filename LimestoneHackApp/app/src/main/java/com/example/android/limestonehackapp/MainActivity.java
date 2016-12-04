@@ -61,6 +61,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void showHanoiDrop(View view) {
+        TextView hanoiInstruction = (TextView) findViewById(R.id.hanoi_instruction);
+        Button hanoiBtn = (Button) findViewById(R.id.hanoi_button);
+
+        if (hanoiInstruction.getVisibility() == View.VISIBLE) {
+            hanoiInstruction.setVisibility(View.GONE);
+            hanoiBtn.setVisibility(View.GONE);
+        } else {
+            hanoiInstruction.setVisibility(View.VISIBLE);
+            hanoiBtn.setVisibility(View.VISIBLE);
+        }
+    }
+
     public void showLinkedListDrop(View view){
         ImageView foxImg1 = (ImageView)findViewById(R.id.foxImg1);
         ImageView foxImg2 = (ImageView)findViewById(R.id.foxImg2);

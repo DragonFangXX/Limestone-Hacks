@@ -53,6 +53,25 @@
             android:text="@string/recursion" />
 
         <TextView
+            android:id="@+id/hanoi_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text=""
+            android:visibility="gone"
+            android:onClick="showHanoiDrop"/>
+        <Button
+            android:id="@+id/hanoi_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:text="PLAY NOW"
+            android:onClick="openLinkedList"/>
+
+        <TextView
             style="@style/main_header"
             android:background="#c0ca33"
             android:onClick="showLinkedListDrop"
