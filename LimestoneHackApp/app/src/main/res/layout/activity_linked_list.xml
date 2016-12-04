@@ -15,9 +15,7 @@
         android:layout_width="100dp"
         android:layout_height="16dp"
         android:text="Bottom of Tier List"/>
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="16dp" />
+
 
     <ImageView
         android:id="@+id/kirbyImg1"
@@ -54,4 +52,8 @@
         android:layout_marginTop="30dp"
         android:text="Next Node"
         android:onClick="openNextImage"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="16dp"
+        android:text="Top of Tier List"/>
 </LinearLayout>
