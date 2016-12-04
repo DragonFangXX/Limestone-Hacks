@@ -59,7 +59,8 @@
             android:textSize="18sp"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text="HNOI HERE"
+            android:text="By repeatedly shifting everything but the last block to the middle, shifting the last block to the right and using the first
+            pole to get all the blocks to the last, one can solve a tower of infinite height."
             android:visibility="gone"/>
         <Button
             android:id="@+id/hanoi_button"
