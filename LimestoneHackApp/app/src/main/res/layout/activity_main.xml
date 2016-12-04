@@ -97,7 +97,8 @@
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Check it out!"/>
+            android:text="Check it out!"
+            android:onClick="openLinkedList"/>
 
         <TextView
             style="@style/main_header"
