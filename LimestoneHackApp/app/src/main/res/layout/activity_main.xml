@@ -85,7 +85,19 @@
             android:layout_marginTop="16dp"
             android:src="@drawable/fox"
             android:visibility="gone" />
-
+        <TextView
+            android:id="@+id/linked_list_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:text="The linked list is like an iron man in Smash. To get to the final challenger, you must first get through every character before it."/>
+        <Button
+            android:id="@+id/linked_button"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check it out!"/>
 
         <TextView
             style="@style/main_header"
