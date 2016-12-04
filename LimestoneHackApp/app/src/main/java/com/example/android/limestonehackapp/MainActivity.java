@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView foxImg2 = (ImageView)findViewById(R.id.foxImg2);
         ImageView foxImg3 = (ImageView)findViewById(R.id.foxImg3);
         Button linkBtn = (Button)findViewById(R.id.linked_button);
-        TextView linkedText = (TextView)findViewById(R.id.linked_list_description)
+        TextView linkedText = (TextView)findViewById(R.id.linked_list_description);
 
 
         if (foxImg1.getVisibility() == View.VISIBLE){
