@@ -91,7 +91,9 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:visibility="gone"
-            android:text="The linked list is like an iron man in Smash. To get to the final challenger, you must first get through every character before it."/>
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="The linked list is like an ironman in Smash. To get to the final challenger, you must first get through every character before it."/>
         <Button
             android:id="@+id/linked_button"
             android:visibility="gone"
