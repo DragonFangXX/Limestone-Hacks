@@ -20,15 +20,11 @@
             android:label="Binary Search Fun"
             android:theme="@style/BinaryTheme" />
         <activity
-            android:name=".HanoiActivity"
-            android:label="HAAAANNNOOOOI"
-            android:theme="@style/RecursionTheme" />
-        <activity
             android:name=".ExtraHelpActivity"
             android:label="Additional Resources"
             android:theme="@style/ExtraHelpTheme" />
         <activity
-            android:name=".HanoiActivityReformatted"
+            android:name=".HanoiActivity"
             android:label="HAAAANNNOOOOI"
             android:theme="@style/RecursionTheme"></activity>
         <activity android:name=".LinkedListActivity"></activity>
